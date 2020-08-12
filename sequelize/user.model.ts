@@ -11,7 +11,7 @@ export default class User extends Model<User> {
   public name!: string;
 
   @Column(DataType.STRING)
-  public cognome!: string;
+  public surname!: string;
 
   @Column(DataType.STRING)
   public email!: string;

@@ -16,7 +16,8 @@
 
     },
     "exclude": [
-      "node_modules"
+      "node_modules",
+      ".vscode"
     ],
     "lib": ["es2015"]
   }
