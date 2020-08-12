@@ -1,0 +1,35 @@
+{
+  "name": "h-farm-test",
+  "version": "1.0.0",
+  "description": "H-Farm test",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "tsc && node build/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paolocattani/h-farm.git"
+  },
+  "author": "Paolo Cattani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paolocattani/h-farm/issues"
+  },
+  "homepage": "https://github.com/paolocattani/h-farm#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "pg": "^8.3.0",
+    "pg-hstore": "^2.3.3",
+    "reflect-metadata": "^0.1.13",
+    "sequelize": "^5.22.3",
+    "sequelize-typescript": "^1.1.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.7",
+    "node-ts": "^5.0.8",
+    "tslint": "^5.12.1",
+    "typescript": "^3.3.3"
+  }
+}
