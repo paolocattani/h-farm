@@ -1,10 +1,17 @@
 import { Sequelize, SequelizeOptions } from 'sequelize-typescript';
 import { logger } from '../common/logger';
+import { isDevMode } from '../common/debug';
 
 export default async function syncDb(): Promise<Sequelize | null> {
 
   const connectionOptions: SequelizeOptions = {
     dialect: 'postgres',
+    dialectOptions: isDevMode() ? {
+      ssl: {
+        require: true,
+        rejectUnauthorized: false
+      }
+    }: undefined,
     models: [__dirname + '/*.model.ts'],
     modelMatch: (filename: string, member: string) =>
       filename.substring(0, filename.indexOf('.model')) === member.toLowerCase(),
