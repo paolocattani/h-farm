@@ -29,7 +29,6 @@ router.put(
             }
 
             user = await user.update({name,surname,email});
-            logger.info("updated : ",JSON.stringify(user,null,2));
             return res.status(200).json({
                 code:200,
                 id:user.id,
@@ -115,7 +114,7 @@ router.delete(
             if(!id && !email ){
                 return missignParamsReponse(res);
             }
-            const where:WhereOptions = id ? {id} : {email};
+            const where:WhereOptions = id ? {id:id!} : {email:email!};
             const user = await User.findOne({where});
             if(!user){
                 return  res.status(400).json({

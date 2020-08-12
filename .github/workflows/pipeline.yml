@@ -16,7 +16,7 @@ jobs:
     - name: Install Dependecies
       run: npm ci
     - name: Build
-      run: npm ci
+      run: npm run build
     #-name: Test
     # run: npm run test
 
