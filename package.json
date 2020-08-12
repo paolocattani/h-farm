@@ -7,7 +7,7 @@
     "test": "jest --detectOpenHandles",
     "build": "tsc",
     "start": "tsc && node ./build/index.js",
-    "postinstall": "npm run build",
+    "heroku-postbuild": "npm run build",
     "dev": "nodemon --watch '*.ts' --exec 'ts-node' index.ts"
   },
   "repository": {
@@ -33,6 +33,7 @@
     "reflect-metadata": "^0.1.13",
     "sequelize": "^5.22.3",
     "sequelize-typescript": "^1.1.0",
+    "tsc": "^1.20150623.0",
     "uninstall": "0.0.0"
   },
   "devDependencies": {
