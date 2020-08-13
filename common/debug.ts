@@ -6,5 +6,5 @@ export function isProductionMode() {
 }
 
 export function isDevMode() {
-  return process.env.NODE_ENV == undefined || process.env.NODE_ENV == 'development' ? true : false;
+  return process.env.NODE_ENV == undefined || process.env.NODE_ENV == 'development' ||  process.env.NODE_ENV == 'test' ? true : false;
 }
