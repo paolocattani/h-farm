@@ -6,16 +6,15 @@
       "types": [ "node"],
       "sourceMap": true,
       "outDir": "./build",
-      "skipLibCheck": true,
       "strict": true,
       "allowSyntheticDefaultImports": true,
       "esModuleInterop": true,
-      "rootDir": "./",
+      "rootDir": "./src",
       "experimentalDecorators":true,
       "emitDecoratorMetadata": true,
-
     },
     "exclude": [
+      "babel.config.js",
       "./test",
       "node_modules",
       ".vscode"

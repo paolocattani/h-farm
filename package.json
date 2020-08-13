@@ -8,7 +8,7 @@
     "build": "tsc",
     "start": "node ./build/index.js",
     "heroku-postbuild": "npm run build",
-    "dev": "nodemon --watch '*.ts' --exec 'ts-node' index.ts"
+    "dev": "nodemon --watch '*.ts' --exec 'ts-node' ./src/index.ts"
   },
   "repository": {
     "type": "git",
@@ -45,6 +45,7 @@
     "babel-jest": "^26.3.0",
     "jest": "^26.3.0",
     "node-fetch": "^2.6.0",
+    "ts-node": "^8.10.2",
     "tslint": "^5.12.1",
     "typescript": "^3.9.7"
   }

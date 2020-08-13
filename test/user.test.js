@@ -1,5 +1,5 @@
-import User from '../sequelize/user.model';
-import server, { shutDown } from '../server/server';
+import User from '../src/sequelize/user.model';
+import server, { shutDown } from '../src/server/server';
 import fetch from 'node-fetch';
 
 
